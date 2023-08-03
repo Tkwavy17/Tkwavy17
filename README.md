@@ -1,10 +1,12 @@
-stop = int(input())
+string1 = input()
 
-result = 0
+revstring = ' ' 
 
-for a in range(5):
-  for b in range(4):
-    result += a + b
-  print(result)
-  if result > stop:
-    break
+if string1 == 'd' or 'done' or 'Done':
+    pass
+
+for rev in range(len(string1)-1,-1,-1):
+    revstring += string1[rev]
+    if len(revstring)  <= (len(string1)):
+        continue
+    print(revstring)
